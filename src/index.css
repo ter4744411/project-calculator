@@ -5,9 +5,234 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transform: scale(1); /* Adjust the scale value as needed */
+  transform-origin: top;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.title--text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title--box{
+  display:flex;
+  justify-content: center;
+  font-size:5rem;
+  font-weight: bold;
+  color:rgb(69, 69, 69);
+}
+
+.title--box div{
+  padding-top: 10rem;
+  padding-right: 50rem;
+}
+
+.upper{
+  padding-top: 10rem;
+  display:flex;
+  gap:50rem;
+  font-weight: bold;
+  font-size:4rem;
+}
+
+.upper button{
+  width:10rem;
+  font-size:2.5rem;
+  font-weight: bold;
+  background-color: #2894f4;
+  color:white;
+  border-radius: 10px;
+  border:none;
+  box-shadow:2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.newproject--container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.lower{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap:5rem;
+  margin-bottom: 8rem;
+}
+.project{
+  display:flex;
+  flex-direction: column;
+  font-size:2.5rem;
+}
+
+.inside--project{
+  display: flex;
+  justify-content:space-between;
+  gap:50rem;
+  margin-bottom: 4rem;
+}
+
+.input-field {
+  padding-left: 20px;
+  font-size: 2rem;
+  width: 50rem;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  transition: border-bottom-color 0.5s ease-in-out;
+}
+
+.input-field.isactive {
+  padding-left: 20px;
+  font-size: 2rem;
+  width: 50rem;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 5px solid #2894f4;
+}
+
+.input-field.notactive:focus {
+  padding-left: 20px;
+  font-size: 2rem;
+  width: 50rem;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+input:focus {
+  outline: none;
+}
+
+.deleteicon{
+  font-size:50px;
+}
+
+.remove--btn{
+    height:7rem;
+    width: 10rem;
+    border: none;
+    font-size:1.5rem;
+    background-color: rgb(255, 0, 0);
+    border:3px solid white;
+    border-radius: 20px;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    box-shadow: 3px 3px 8px rgba(0,0,0,1);
+    margin-left: 66rem;
+    margin-bottom: 5rem;
+}
+
+.move--btn{
+  display: flex;
+  justify-content: center;
+}
+
+.calculate--btn{
+  width:35rem;
+  height: 10rem;
+  font-size: 3rem;
+  background-color: #2894f4;
+  border-radius: 20px;
+  border:none;
+  color:white;
+  font-weight:bold;
+  margin-bottom: 5rem;
+}
+.list{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.project--list{
+  border: 10px solid #000000;
+  width:120rem;
+  height:15rem;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  font-size:3rem;
+  font-weight: bold;
+  border-radius: 15px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.project--container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.project--container button{
+  height:8rem;
+  width: 8rem;
+  border: none;
+  font-size:1.5rem;
+  background-color: rgb(255, 0, 0);
+  border:3px solid white;
+  border-radius: 20px;
+  color:rgb(255, 255, 255);
+  font-weight: bold;
+  box-shadow: 3px 3px 8px rgba(0,0,0,1);
+  margin-left: 3rem;
+}
+
+.project--name{
+  font-size:35px;
+  color:white;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fronticon{
+  font-size: 8rem;
+}
+
+.tails{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conclusion{
+  font-size:5rem;
+  font-weight: bold;
+}
+
+.refresh--btn {
+  margin-left: 30px; /* Adjust this value as needed */
+  font-size: 50px;
+  background: #2894f4;
+  border:none;
+  color:white;
+  margin-bottom: 4rem;
+  border-radius: 80%;
+  height: 70px;
+  width: 70px;
+  padding-top: 8px;
+}
+
+.btn--container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.refresh-icon {
+  vertical-align: middle; /* Align the icon vertically */
 }
